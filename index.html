@@ -2,20 +2,18 @@
 <html lang="fr" class="scroll-smooth">
   <head>
     <meta charset="utf-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Myriam Frolla — Autrice jeunesse</title>
-    <meta name="description" content="Site officiel de Myriam Frolla — autrice jeunesse : livres, ateliers, rencontres et actualités." />
+    <meta name="description" content="Site officiel de Myriam Frolla — autrice jeunesse : livres, salons et dédicaces, rencontres et actualités." />
     <meta name="theme-color" content="#f472b6" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Myriam Frolla — Autrice jeunesse" />
-    <meta property="og:description" content="Site officiel de Myriam Frolla. Histoires pour grandir, rêver et s'émerveiller." />
+    <meta property="og:description" content="Site officiel de Myriam Frolla. Histoires pour grandir, rêver et s’émerveiller." />
     <meta property="og:image" content="assets/social/og-image.jpg" />
     <link rel="icon" href="assets/favicon.ico" />
 
-    <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
-
-    <!-- Tailwind via CDN for quick start -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
       tailwind.config = {
@@ -27,83 +25,51 @@
               body: ['Inter', 'ui-sans-serif', 'system-ui', 'sans-serif'],
             },
             colors: {
-              brand: {
-                50: '#fff1f8',
-                100: '#ffe4f1',
-                200: '#fec7e3',
-                300: '#fda3d2',
-                400: '#fb77bc',
-                500: '#f472b6',
-                600: '#e14598',
-                700: '#be267b',
-                800: '#9b1e65',
-                900: '#7e1a54',
-              },
-              accent: {
-                500: '#f59e0b',
-                600: '#d97706',
-              },
-            },
-          },
-        },
+              brand: { 50:'#fff1f8',100:'#ffe4f1',200:'#fec7e3',300:'#fda3d2',400:'#fb77bc',500:'#f472b6',600:'#e14598',700:'#be267b',800:'#9b1e65',900:'#7e1a54' },
+              accent: { 500:'#f59e0b',600:'#d97706' }
+            }
+          }
+        }
       }
     </script>
-
     <style>
-      /* Decorative blob background for hero */
       .blob {
         background: radial-gradient(60% 60% at 20% 20%, #fda3d244 0%, #ffffff00 100%),
                     radial-gradient(50% 50% at 80% 30%, #f59e0b33 0%, #ffffff00 100%),
                     radial-gradient(40% 40% at 50% 80%, #60a5fa33 0%, #ffffff00 100%);
       }
+      @media (max-width: 420px) { .slider > article { min-width: 220px; } }
     </style>
   </head>
   <body class="font-body text-slate-800 dark:text-slate-100 bg-white dark:bg-slate-900">
-    <!-- Skip link -->
     <a href="#contenu" class="sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 bg-brand-600 text-white px-4 py-2 rounded">Aller au contenu</a>
 
-    <!-- Header / Nav -->
     <header class="sticky top-0 z-50 bg-white/80 dark:bg-slate-900/80 backdrop-blur border-b border-slate-200/70 dark:border-slate-800">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex items-center justify-between h-16">
           <a href="index.html" class="flex items-center gap-3 group" aria-label="Retour à l’accueil">
             <span class="inline-flex h-9 w-9 rounded-full bg-brand-500/15 text-brand-700 dark:text-brand-200 items-center justify-center ring-1 ring-brand-500/20 group-hover:ring-brand-500/40 transition">
-              <!-- Simple feather logo -->
-              <svg viewBox="0 0 24 24" class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                <path d="M20 6c-5.333 0-9.333 1.333-12 4S4 18 4 18s6-1.333 8-4 4-8 8-8Z" />
-                <path d="M14 10c-1.5 1.5-4 2-6 2" />
-              </svg>
+              <svg viewBox="0 0 24 24" class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6c-5.333 0-9.333 1.333-12 4S4 18 4 18s6-1.333 8-4 4-8 8-8Z"/><path d="M14 10c-1.5 1.5-4 2-6 2"/></svg>
             </span>
             <div class="leading-tight">
               <div class="font-display font-bold text-slate-900 dark:text-white tracking-tight">Myriam Frolla</div>
               <div class="text-xs text-slate-500 dark:text-slate-400">Autrice jeunesse</div>
             </div>
           </a>
-
           <nav class="hidden md:flex items-center gap-6" aria-label="Navigation principale">
             <a href="index.html" class="nav-link text-sm text-slate-700 dark:text-slate-200 hover:text-brand-600">Accueil</a>
             <a href="livres.html" class="nav-link text-sm text-slate-700 dark:text-slate-200 hover:text-brand-600">Livres</a>
-            <a href="bio.html" class="nav-link text-sm text-slate-700 dark:text-slate-200 hover:text-brand-600">À propos</a>
-            <a href="ateliers.html" class="nav-link text-sm text-slate-700 dark:text-slate-200 hover:text-brand-600">Ateliers</a>
+            <a href="bio.html" class="nav-link text-sm text-slate-700 dark:text-slate-200 hover:text-brand-600"> propos</a>
+            <a href="ateliers.html" class="nav-link text-sm text-slate-700 dark:text-slate-200 hover:text-brand-600">Salons</a>
             <a href="contact.html" class="nav-link text-sm inline-flex items-center gap-2 px-3 py-1.5 rounded-md bg-brand-600 text-white hover:bg-brand-700 shadow-sm">Contact</a>
           </nav>
-
           <div class="flex items-center gap-2">
             <button id="themeToggle" class="p-2 rounded-md hover:bg-slate-100 dark:hover:bg-slate-800" aria-label="Basculer le thème">
-              <svg class="h-5 w-5 sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <circle cx="12" cy="12" r="4"></circle>
-                <path d="M12 2v2m0 16v2m10-10h-2M4 12H2m15.364 6.364-1.414-1.414M6.05 6.05 4.636 4.636m12.728 0-1.414 1.414M6.05 17.95 4.636 19.364"/>
-              </svg>
-              <svg class="h-5 w-5 moon-icon hidden" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
-              </svg>
+              <svg class="h-5 w-5 sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2m10-10h-2M4 12H2m15.364 6.364-1.414-1.414M6.05 6.05 4.636 4.636m12.728 0-1.414 1.414M6.05 17.95 4.636 19.364"/></svg>
+              <svg class="h-5 w-5 moon-icon hidden" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
             </button>
             <button id="menuToggle" class="md:hidden p-2 rounded-md hover:bg-slate-100 dark:hover:bg-slate-800" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="menuMobile">
-              <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <line x1="3" y1="12" x2="21" y2="12"></line>
-                <line x1="3" y1="6" x2="21" y2="6"></line>
-                <line x1="3" y1="18" x2="21" y2="18"></line>
-              </svg>
+              <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
             </button>
           </div>
         </div>
@@ -112,8 +78,8 @@
         <div class="px-4 py-3 space-y-2">
           <a href="index.html" class="block nav-link py-2">Accueil</a>
           <a href="livres.html" class="block nav-link py-2">Livres</a>
-          <a href="bio.html" class="block nav-link py-2">À propos</a>
-          <a href="ateliers.html" class="block nav-link py-2">Ateliers</a>
+          <a href="bio.html" class="block nav-link py-2"> propos</a>
+          <a href="ateliers.html" class="block nav-link py-2">Salons</a>
           <a href="contact.html" class="block nav-link py-2">Contact</a>
         </div>
       </div>
@@ -127,23 +93,14 @@
           <div class="grid lg:grid-cols-2 gap-10 items-center">
             <div data-fade="up">
               <span class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-sm bg-brand-500/10 text-brand-700 dark:text-brand-200 ring-1 ring-brand-500/20">Autrice jeunesse</span>
-              <h1 class="mt-5 font-display text-4xl sm:text-5xl font-extrabold tracking-tight text-slate-900 dark:text-white">
-                Des histoires qui font grandir, rêver et s’émerveiller
-              </h1>
-              <p class="mt-5 text-lg text-slate-600 dark:text-slate-300 max-w-prose">
-                Bienvenue sur le site officiel de <strong>Myriam Frolla</strong>. Découvrez ses albums et romans pour la jeunesse, ses ateliers d’écriture et ses rencontres en écoles et médiathèques.
-              </p>
+              <h1 class="mt-5 font-display text-4xl sm:text-5xl font-extrabold tracking-tight text-slate-900 dark:text-white">Des histoires qui font grandir, rêver et s’émerveiller</h1>
+              <p class="mt-5 text-lg text-slate-600 dark:text-slate-300 max-w-prose">Bienvenue sur le site officiel de <strong>Myriam Frolla</strong>. Découvrez ses albums et romans pour la jeunesse, sa présence en <strong>salons du livre</strong> et ses rencontres en médiathèques.</p>
               <div class="mt-8 flex flex-wrap gap-3">
-                <a href="livres.html" class="inline-flex items-center gap-2 px-5 py-3 rounded-md bg-brand-600 text-white hover:bg-brand-700 shadow-sm">
-                  Découvrir les livres
-                  <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-                </a>
-                <a href="#ateliers" class="inline-flex items-center gap-2 px-5 py-3 rounded-md bg-slate-100 dark:bg-slate-800 text-slate-900 dark:text-slate-100 hover:bg-slate-200 dark:hover:bg-slate-700">
-                  Ateliers et rencontres
-                </a>
+                <a href="livres.html" class="inline-flex items-center gap-2 px-5 py-3 rounded-md bg-brand-600 text-white hover:bg-brand-700 shadow-sm">Découvrir les livres <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+                <a href="#salons" class="inline-flex items-center gap-2 px-5 py-3 rounded-md bg-slate-100 dark:bg-slate-800 text-slate-900 dark:text-slate-100 hover:bg-slate-200 dark:hover:bg-slate-700">Prochains salons</a>
               </div>
               <div class="mt-8 flex items-center gap-6 text-sm text-slate-500 dark:text-slate-400">
-                <div class="flex items-center gap-2"><span class="h-2 w-2 rounded-full bg-green-500"></span> Prochains créneaux ateliers ouverts</div>
+                <div class="flex items-center gap-2"><span class="h-2 w-2 rounded-full bg-green-500"></span> Prochains créneaux de salons</div>
                 <div>Actualité: nouvelle parution au printemps</div>
               </div>
             </div>
@@ -151,11 +108,9 @@
               <div class="aspect-[4/3] rounded-2xl bg-gradient-to-br from-brand-200 via-rose-100 to-amber-100 dark:from-brand-900/40 dark:via-slate-800 dark:to-amber-900/20 ring-1 ring-black/5 dark:ring-white/5 shadow-xl flex items-center justify-center overflow-hidden">
                 <div class="text-center p-8">
                   <div class="mx-auto h-24 w-24 rounded-full bg-white/70 dark:bg-slate-900/50 backdrop-blur ring-1 ring-black/5 dark:ring-white/10 flex items-center justify-center">
-                    <svg viewBox="0 0 24 24" class="h-12 w-12 text-brand-700 dark:text-brand-300" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                      <path d="M4 19.5c4-2 8-2 12 0 1-2.5 2.5-5.5 4-7-4 0-7-2-9-5-2 3-5 5-9 5 1.5 1.5 3 4.5 4 7Z" />
-                    </svg>
+                    <svg viewBox="0 0 24 24" class="h-12 w-12 text-brand-700 dark:text-brand-300" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 19.5c4-2 8-2 12 0 1-2.5 2.5-5.5 4-7-4 0-7-2-9-5-2 3-5 5-9 5 1.5 1.5 3 4.5 4 7Z"/></svg>
                   </div>
-                  <h3 class="mt-6 font-display text-2xl font-bold">Lectures, ateliers, rencontres</h3>
+                  <h3 class="mt-6 font-display text-2xl font-bold">Lectures, salons, dédicaces</h3>
                   <p class="mt-2 text-slate-600 dark:text-slate-300">Pour les classes, médiathèques et événements jeunesse</p>
                 </div>
               </div>
@@ -164,7 +119,7 @@
         </div>
       </section>
 
-      <!-- Nouveautés / slider simple -->
+      <!-- Dernières nouveautés -->
       <section class="py-16 sm:py-20 bg-slate-50 dark:bg-slate-950/40 border-y border-slate-200/70 dark:border-slate-800">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div class="flex items-end justify-between gap-4" data-fade="up">
@@ -179,48 +134,45 @@
           </div>
           <div class="mt-8 relative">
             <div class="slider overflow-x-auto snap-x snap-mandatory flex gap-6 pb-4" aria-label="Nouveautés" data-fade="up" data-fade-delay="120">
-              <!-- Nouveautés réelles -->
               <article class="min-w-[280px] max-w-[320px] snap-start bg-white dark:bg-slate-900 ring-1 ring-slate-200 dark:ring-slate-800 rounded-xl overflow-hidden shadow-sm">
                 <a href="https://www.amazon.fr/dp/2487852208" target="_blank" rel="noopener" class="block aspect-[4/3] overflow-hidden bg-slate-100 dark:bg-slate-800">
-                  <img src="https://books.google.com/books/content?id=LlczEQAAQBAJ&printsec=frontcover&img=1&zoom=3" alt="Couverture: Quand je serai grande, je serai artiste, comme ma maman" class="w-full h-full object-cover" loading="lazy" decoding="async" />
+                  <img src="assets/photos/2487852208.jpg" alt="Couverture: Quand je serai grande, je serai artiste, comme ma maman" class="w-full h-full object-cover" loading="lazy" decoding="async" sizes="(min-width:1024px) 33vw, (min-width:640px) 50vw, 90vw" onerror="this.onerror=null; this.src='https://books.google.com/books/content?id=LlczEQAAQBAJ&printsec=frontcover&img=1&zoom=3'" />
                 </a>
-                <div class="p-4">
-                  <h3 class="font-semibold">Quand je serai grande, je serai artiste, comme ma maman</h3>
-                </div>
+                <div class="p-4"><h3 class="font-semibold">Quand je serai grande, je serai artiste, comme ma maman</h3></div>
               </article>
+
               <article class="min-w-[280px] max-w-[320px] snap-start bg-white dark:bg-slate-900 ring-1 ring-slate-200 dark:ring-slate-800 rounded-xl overflow-hidden shadow-sm">
                 <a href="https://www.amazon.fr/dp/2487852461" target="_blank" rel="noopener" class="block aspect-[4/3] overflow-hidden bg-slate-100 dark:bg-slate-800">
-                  <img src="https://books.google.com/books/content?id=7Z1DEQAAQBAJ&printsec=frontcover&img=1&zoom=3" alt="Couverture: Qui sera le roi ?" class="w-full h-full object-cover" loading="lazy" decoding="async" />
+                  <img src="assets/photos/2487852461.jpg" alt="Couverture: Qui sera le roi ?" class="w-full h-full object-cover" loading="lazy" decoding="async" sizes="(min-width:1024px) 33vw, (min-width:640px) 50vw, 90vw" onerror="this.onerror=null; this.src='https://books.google.com/books/content?id=7Z1DEQAAQBAJ&printsec=frontcover&img=1&zoom=3'" />
                 </a>
-                <div class="p-4">
-                  <h3 class="font-semibold">Qui sera le roi ?</h3>
-                </div>
+                <div class="p-4"><h3 class="font-semibold">Qui sera le roi ?</h3></div>
               </article>
+
               <article class="min-w-[280px] max-w-[320px] snap-start bg-white dark:bg-slate-900 ring-1 ring-slate-200 dark:ring-slate-800 rounded-xl overflow-hidden shadow-sm">
-                <a href="https://www.amazon.fr/dp/2387260139" target="_blank" rel="noopener" class="block aspect-[4/3] bg-gradient-to-br from-rose-200 to-amber-300 dark:from-slate-800 dark:to-slate-700"></a>
-                <div class="p-4">
-                  <h3 class="font-semibold">Cléophée: Une coccinelle pas comme les autres</h3>
-                </div>
+                <a href="https://www.amazon.fr/dp/2387260139" target="_blank" rel="noopener" class="block aspect-[4/3] overflow-hidden bg-slate-100 dark:bg-slate-800">
+                  <img src="assets/photos/2387260139.jpg" alt="Couverture: Cléophée: Une coccinelle pas comme les autres" class="w-full h-full object-cover" loading="lazy" decoding="async" onerror="this.onerror=null; this.src='https://covers.openlibrary.org/b/isbn/2387260139-L.jpg'" />
+                </a>
+                <div class="p-4"><h3 class="font-semibold">Cléophée: Une coccinelle pas comme les autres</h3></div>
               </article>
             </div>
           </div>
         </div>
       </section>
 
-      <!-- Ateliers teaser -->
-      <section id="ateliers" class="py-16 sm:py-20">
+      <!-- Salons teaser -->
+      <section id="salons" class="py-16 sm:py-20">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-2 gap-10 items-center">
           <div data-fade="up">
-            <h2 class="font-display text-3xl font-bold text-slate-900 dark:text-white">Ateliers et rencontres</h2>
-            <p class="mt-3 text-slate-600 dark:text-slate-300">Interventions en écoles, collèges et médiathèques : lectures, ateliers d’écriture, clubs livres, projets sur mesure.</p>
+            <h2 class="font-display text-3xl font-bold text-slate-900 dark:text-white">Salons et dédicaces</h2>
+            <p class="mt-3 text-slate-600 dark:text-slate-300">Présence régulière sur des salons du livre et rencontres en médiathèques : échanges, lectures, signatures.</p>
             <ul class="mt-4 space-y-2 text-slate-700 dark:text-slate-200">
-              <li class="flex items-start gap-3"><span class="mt-1 h-2 w-2 rounded-full bg-brand-600"></span> Formats 1h à journée complète</li>
-              <li class="flex items-start gap-3"><span class="mt-1 h-2 w-2 rounded-full bg-brand-600"></span> Thématiques : nature, amitié, émotions, imaginaire</li>
-              <li class="flex items-start gap-3"><span class="mt-1 h-2 w-2 rounded-full bg-brand-600"></span> Adapté par niveau et objectifs pédagogiques</li>
+              <li class="flex items-start gap-3"><span class="mt-1 h-2 w-2 rounded-full bg-brand-600"></span> Agenda mis à jour selon les invitations</li>
+              <li class="flex items-start gap-3"><span class="mt-1 h-2 w-2 rounded-full bg-brand-600"></span> Séances de dédicaces et ventes de livres</li>
+              <li class="flex items-start gap-3"><span class="mt-1 h-2 w-2 rounded-full bg-brand-600"></span> Rencontres avec les lecteurs et lectrices</li>
             </ul>
             <div class="mt-6 flex gap-3">
-              <a href="ateliers.html" class="inline-flex items-center gap-2 px-5 py-3 rounded-md bg-brand-600 text-white hover:bg-brand-700 shadow-sm">Voir les formats</a>
-              <a href="contact.html" class="inline-flex items-center gap-2 px-5 py-3 rounded-md bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700">Demander un devis</a>
+              <a href="ateliers.html" class="inline-flex items-center gap-2 px-5 py-3 rounded-md bg-brand-600 text-white hover:bg-brand-700 shadow-sm">Voir les dates</a>
+              <a href="contact.html" class="inline-flex items-center gap-2 px-5 py-3 rounded-md bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700">Proposer un salon</a>
             </div>
           </div>
           <div class="aspect-[4/3] rounded-2xl bg-white dark:bg-slate-900 ring-1 ring-slate-200 dark:ring-slate-800 shadow-sm flex items-center justify-center" data-fade="up" data-fade-delay="120">
@@ -240,7 +192,7 @@
       <section class="py-16 sm:py-20 bg-gradient-to-br from-rose-50 to-amber-50 dark:from-slate-900 dark:to-slate-900 border-y border-slate-200/70 dark:border-slate-800">
         <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center" data-fade="up">
           <h2 class="font-display text-3xl font-bold text-slate-900 dark:text-white">Restez informé·e</h2>
-          <p class="mt-2 text-slate-600 dark:text-slate-300">Recevez les sorties, dates d’ateliers et coulisses de création.</p>
+          <p class="mt-2 text-slate-600 dark:text-slate-300">Recevez les sorties, dates de salons et coulisses de création.</p>
           <form id="newsletterForm" class="mt-6 flex flex-col sm:flex-row gap-3 justify-center">
             <label class="sr-only" for="newsletterEmail">Adresse e‑mail</label>
             <input id="newsletterEmail" type="email" required placeholder="Votre e‑mail" class="w-full sm:w-80 px-4 py-3 rounded-md ring-1 ring-slate-300 dark:ring-slate-700 bg-white dark:bg-slate-900" />
@@ -251,7 +203,6 @@
       </section>
     </main>
 
-    <!-- Footer -->
     <footer class="py-12">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="grid md:grid-cols-3 gap-8 items-center">
@@ -261,8 +212,8 @@
           </div>
           <nav class="text-sm flex flex-wrap gap-x-6 gap-y-2" aria-label="Navigation du pied de page">
             <a href="livres.html" class="hover:text-brand-600">Livres</a>
-            <a href="bio.html" class="hover:text-brand-600">À propos</a>
-            <a href="ateliers.html" class="hover:text-brand-600">Ateliers</a>
+            <a href="bio.html" class="hover:text-brand-600"> propos</a>
+            <a href="ateliers.html" class="hover:text-brand-600">Salons</a>
             <a href="contact.html" class="hover:text-brand-600">Contact</a>
           </nav>
           <div class="flex items-center gap-4 justify-start md:justify-end">
@@ -277,13 +228,11 @@
             </a>
           </div>
         </div>
-        <div class="mt-10 text-xs text-slate-500 text-center">© <span id="year"></span> Nom de l’autrice. Tous droits réservés.</div>
+        <div class="mt-10 text-xs text-slate-500 text-center">© <span id="year"></span> Myriam Frolla. Tous droits réservés.</div>
       </div>
     </footer>
 
-    <!-- Back to top -->
     <button id="backToTop" class="fixed bottom-6 right-6 hidden p-3 rounded-full bg-brand-600 text-white shadow-lg hover:bg-brand-700" aria-label="Retour en haut">↑</button>
-
     <script src="assets/js/main.js"></script>
   </body>
   </html>

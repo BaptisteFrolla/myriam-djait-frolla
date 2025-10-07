@@ -2,9 +2,10 @@
 <html lang="fr" class="scroll-smooth">
   <head>
     <meta charset="utf-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Myriam Frolla — Ateliers</title>
-    <meta name="description" content="Ateliers d’écriture, lectures et rencontres jeunesse proposés par Myriam Frolla." />
+    <title>Myriam Frolla — Salons</title>
+    <meta name="description" content="Dates de salons du livre, rencontres et dédicaces avec Myriam Frolla." />
     <meta name="theme-color" content="#f472b6" />
     <link rel="icon" href="assets/favicon.ico" />
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
@@ -24,10 +25,7 @@
         <div class="flex items-center justify-between h-16">
           <a href="index.html" class="flex items-center gap-3 group" aria-label="Retour à l’accueil">
             <span class="inline-flex h-9 w-9 rounded-full bg-brand-500/15 text-brand-700 dark:text-brand-200 items-center justify-center ring-1 ring-brand-500/20 group-hover:ring-brand-500/40 transition">
-              <svg viewBox="0 0 24 24" class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                <path d="M20 6c-5.333 0-9.333 1.333-12 4S4 18 4 18s6-1.333 8-4 4-8 8-8Z" />
-                <path d="M14 10c-1.5 1.5-4 2-6 2" />
-              </svg>
+              <svg viewBox="0 0 24 24" class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6c-5.333 0-9.333 1.333-12 4S4 18 4 18s6-1.333 8-4 4-8 8-8Z"/><path d="M14 10c-1.5 1.5-4 2-6 2"/></svg>
             </span>
             <div class="leading-tight">
               <div class="font-display font-bold text-slate-900 dark:text-white tracking-tight">Myriam Frolla</div>
@@ -37,13 +35,13 @@
           <nav class="hidden md:flex items-center gap-6" aria-label="Navigation principale">
             <a href="index.html" class="nav-link text-sm text-slate-700 dark:text-slate-200 hover:text-brand-600">Accueil</a>
             <a href="livres.html" class="nav-link text-sm text-slate-700 dark:text-slate-200 hover:text-brand-600">Livres</a>
-            <a href="bio.html" class="nav-link text-sm text-slate-700 dark:text-slate-200 hover:text-brand-600">À propos</a>
-            <a href="ateliers.html" class="nav-link text-sm text-slate-700 dark:text-slate-200 hover:text-brand-600">Ateliers</a>
+            <a href="bio.html" class="nav-link text-sm text-slate-700 dark:text-slate-200 hover:text-brand-600"> propos</a>
+            <a href="ateliers.html" class="nav-link text-sm text-slate-700 dark:text-slate-200 hover:text-brand-600">Salons</a>
             <a href="contact.html" class="nav-link text-sm inline-flex items-center gap-2 px-3 py-1.5 rounded-md bg-brand-600 text-white hover:bg-brand-700 shadow-sm">Contact</a>
           </nav>
           <div class="flex items-center gap-2">
             <button id="themeToggle" class="p-2 rounded-md hover:bg-slate-100 dark:hover:bg-slate-800" aria-label="Basculer le thème">
-              <svg class="h-5 w-5 sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2m0 16v2m10-10h-2M4 12H2m15.364 6.364-1.414-1.414M6.05 6.05 4.636 4.636m12.728 0-1.414 1.414M6.05 17.95 4.636 19.364"/></svg>
+              <svg class="h-5 w-5 sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2m10-10h-2M4 12H2m15.364 6.364-1.414-1.414M6.05 6.05 4.636 4.636m12.728 0-1.414 1.414M6.05 17.95 4.636 19.364"/></svg>
               <svg class="h-5 w-5 moon-icon hidden" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
             </button>
             <button id="menuToggle" class="md:hidden p-2 rounded-md hover:bg-slate-100 dark:hover:bg-slate-800" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="menuMobile">
@@ -56,8 +54,8 @@
         <div class="px-4 py-3 space-y-2">
           <a href="index.html" class="block nav-link py-2">Accueil</a>
           <a href="livres.html" class="block nav-link py-2">Livres</a>
-          <a href="bio.html" class="block nav-link py-2">À propos</a>
-          <a href="ateliers.html" class="block nav-link py-2">Ateliers</a>
+          <a href="bio.html" class="block nav-link py-2"> propos</a>
+          <a href="ateliers.html" class="block nav-link py-2">Salons</a>
           <a href="contact.html" class="block nav-link py-2">Contact</a>
         </div>
       </div>
@@ -66,37 +64,22 @@
     <main id="contenu" class="py-12 sm:py-16">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <header class="max-w-3xl" data-fade="up">
-          <h1 class="font-display text-4xl font-extrabold tracking-tight text-slate-900 dark:text-white">Ateliers & rencontres</h1>
-          <p class="mt-3 text-slate-600 dark:text-slate-300">Pour les classes, médiathèques et événements jeunesse. Des formats adaptables et ludiques.</p>
+          <h1 class="font-display text-4xl font-extrabold tracking-tight text-slate-900 dark:text-white">Salons & dédicaces</h1>
+          <p class="mt-3 text-slate-600 dark:text-slate-300">Présence ponctuelle sur des <strong>salons du livre</strong>, rencontres en médiathèques et séances de signatures.</p>
         </header>
 
         <section class="mt-8 grid md:grid-cols-3 gap-6" data-fade="up">
           <article class="p-5 rounded-xl ring-1 ring-slate-200 dark:ring-slate-800 bg-white dark:bg-slate-900">
-            <h3 class="font-semibold">Lecture‑rencontre</h3>
-            <p class="mt-2 text-sm text-slate-600 dark:text-slate-300">Échanges autour d’un livre : inspirations, écriture, univers.</p>
-            <ul class="mt-3 text-sm list-disc ml-5 space-y-1">
-              <li>45–60 min</li>
-              <li>Groupes de classe</li>
-              <li>Questions/Réponses</li>
-            </ul>
+            <h3 class="font-semibold">Salons du livre</h3>
+            <p class="mt-2 text-sm text-slate-600 dark:text-slate-300">Stands, échanges et ventes de livres avec séances de dédicaces.</p>
           </article>
           <article class="p-5 rounded-xl ring-1 ring-slate-200 dark:ring-slate-800 bg-white dark:bg-slate-900">
-            <h3 class="font-semibold">Atelier d’écriture</h3>
-            <p class="mt-2 text-sm text-slate-600 dark:text-slate-300">Jeux d’écriture, création de personnages, mini‑histoires.</p>
-            <ul class="mt-3 text-sm list-disc ml-5 space-y-1">
-              <li>1h à 2h</li>
-              <li>Cycle 2 à 4</li>
-              <li>Matériel fourni</li>
-            </ul>
+            <h3 class="font-semibold">Médiathèques</h3>
+            <p class="mt-2 text-sm text-slate-600 dark:text-slate-300">Rencontres avec les lecteurs et animations ponctuelles.</p>
           </article>
           <article class="p-5 rounded-xl ring-1 ring-slate-200 dark:ring-slate-800 bg-white dark:bg-slate-900">
-            <h3 class="font-semibold">Projet long</h3>
-            <p class="mt-2 text-sm text-slate-600 dark:text-slate-300">Co‑création d’un livre de classe ou d’un fanzine.</p>
-            <ul class="mt-3 text-sm list-disc ml-5 space-y-1">
-              <li>Sur plusieurs séances</li>
-              <li>Exposition possible</li>
-              <li>Restitution publique</li>
-            </ul>
+            <h3 class="font-semibold">Dédicaces</h3>
+            <p class="mt-2 text-sm text-slate-600 dark:text-slate-300">Signatures lors des événements et sorties.</p>
           </article>
         </section>
 
@@ -106,40 +89,28 @@
             <dl class="mt-3 grid sm:grid-cols-2 gap-x-6 gap-y-2 text-sm">
               <div>
                 <dt class="text-slate-500">Zone d’intervention</dt>
-                <dd>Ile‑de‑France et régions voisines (déplacements possibles)</dd>
+                <dd>Île‑de‑France et régions voisines (déplacements possibles)</dd>
               </div>
               <div>
                 <dt class="text-slate-500">Matériel</dt>
-                <dd>Feuilles, crayons, post‑its, vidéoprojecteur (si possible)</dd>
+                <dd>Affiches, marque‑pages, table pour les dédicaces</dd>
               </div>
               <div>
                 <dt class="text-slate-500">Tarifs</dt>
-                <dd>Selon format et durée — devis sur demande</dd>
+                <dd>Selon événement — devis sur demande</dd>
               </div>
               <div>
-                <dt class="text-slate-500">Accessibilité</dt>
-                <dd>Ateliers adaptables selon les besoins des élèves</dd>
+                <dt class="text-slate-500">Contact</dt>
+                <dd>Pour proposer un salon ou une dédicace, utilisez le <a class="underline" href="contact.html">formulaire de contact</a>.</dd>
               </div>
             </dl>
-            <div class="mt-4">
-              <a href="contact.html" class="inline-flex items-center gap-2 px-4 py-2 rounded-md bg-brand-600 text-white hover:bg-brand-700">Demander un devis</a>
-            </div>
           </div>
-          <div class="p-5 rounded-xl ring-1 ring-slate-200 dark:ring-slate-800 bg-white dark:bg-slate-900" data-fade="up" data-fade-delay="120">
-            <h2 class="font-semibold">FAQ</h2>
-            <details class="mt-2">
-              <summary class="cursor-pointer text-sm">Comment réserver un atelier ?</summary>
-              <p class="mt-1 text-sm text-slate-600 dark:text-slate-300">Contactez‑moi avec vos dates et objectifs. Nous ajusterons ensemble le format.</p>
-            </details>
-            <details class="mt-2">
-              <summary class="cursor-pointer text-sm">Quels niveaux scolaires ?</summary>
-              <p class="mt-1 text-sm text-slate-600 dark:text-slate-300">De la maternelle au collège, en adaptant les consignes.</p>
-            </details>
-            <details class="mt-2">
-              <summary class="cursor-pointer text-sm">Frais de déplacement</summary>
-              <p class="mt-1 text-sm text-slate-600 dark:text-slate-300">Au réel ou au forfait, selon la distance depuis la base.</p>
-            </details>
-          </div>
+          <aside class="p-5 rounded-xl ring-1 ring-slate-200 dark:ring-slate-800 bg-white dark:bg-slate-900" data-fade="up">
+            <h2 class="font-semibold">Prochaines dates</h2>
+            <ul class="mt-3 space-y-2 text-sm text-slate-600 dark:text-slate-300">
+              <li>A compléter — n’hésitez pas à revenir !</li>
+            </ul>
+          </aside>
         </section>
       </div>
     </main>
@@ -153,8 +124,8 @@
           </div>
           <nav class="text-sm flex flex-wrap gap-x-6 gap-y-2" aria-label="Navigation du pied de page">
             <a href="livres.html" class="hover:text-brand-600">Livres</a>
-            <a href="bio.html" class="hover:text-brand-600">À propos</a>
-            <a href="ateliers.html" class="hover:text-brand-600">Ateliers</a>
+            <a href="bio.html" class="hover:text-brand-600"> propos</a>
+            <a href="ateliers.html" class="hover:text-brand-600">Salons</a>
             <a href="contact.html" class="hover:text-brand-600">Contact</a>
           </nav>
           <div class="flex items-center gap-4 justify-start md:justify-end">
@@ -169,7 +140,7 @@
             </a>
           </div>
         </div>
-        <div class="mt-10 text-xs text-slate-500 text-center">© <span id="year"></span> Nom de l’autrice. Tous droits réservés.</div>
+        <div class="mt-10 text-xs text-slate-500 text-center">© <span id="year"></span> Myriam Frolla. Tous droits réservés.</div>
       </div>
     </footer>
 
@@ -177,3 +148,4 @@
     <script src="assets/js/main.js"></script>
   </body>
   </html>
+
