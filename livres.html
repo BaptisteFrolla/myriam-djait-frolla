@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Myriam Frolla — Livres</title>
+    <meta name="description" content="Bibliographie de Myriam Frolla : albums et romans jeunesse, par âge et par thèmes." />
+    <meta name="theme-color" content="#f472b6" />
+    <link rel="icon" href="assets/favicon.ico" />
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: { extend: {
+          fontFamily: { display: ['Quicksand','ui-sans-serif','system-ui','sans-serif'], body: ['Inter','ui-sans-serif','system-ui','sans-serif'] },
+          colors: { brand: {50:'#fff1f8',100:'#ffe4f1',200:'#fec7e3',300:'#fda3d2',400:'#fb77bc',500:'#f472b6',600:'#e14598',700:'#be267b',800:'#9b1e65',900:'#7e1a54'}, accent:{500:'#f59e0b',600:'#d97706'} }
+        }}
+      }
+    </script>
+  </head>
+  <body class="font-body text-slate-800 dark:text-slate-100 bg-white dark:bg-slate-900">
+    <a href="#contenu" class="sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 bg-brand-600 text-white px-4 py-2 rounded">Aller au contenu</a>
+
+    <header class="sticky top-0 z-50 bg-white/80 dark:bg-slate-900/80 backdrop-blur border-b border-slate-200/70 dark:border-slate-800">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between h-16">
+          <a href="index.html" class="flex items-center gap-3 group" aria-label="Retour à l’accueil">
+            <span class="inline-flex h-9 w-9 rounded-full bg-brand-500/15 text-brand-700 dark:text-brand-200 items-center justify-center ring-1 ring-brand-500/20 group-hover:ring-brand-500/40 transition">
+              <svg viewBox="0 0 24 24" class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M20 6c-5.333 0-9.333 1.333-12 4S4 18 4 18s6-1.333 8-4 4-8 8-8Z" />
+                <path d="M14 10c-1.5 1.5-4 2-6 2" />
+              </svg>
+            </span>
+            <div class="leading-tight">
+              <div class="font-display font-bold text-slate-900 dark:text-white tracking-tight">Myriam Frolla</div>
+              <div class="text-xs text-slate-500 dark:text-slate-400">Autrice jeunesse</div>
+            </div>
+          </a>
+          <nav class="hidden md:flex items-center gap-6" aria-label="Navigation principale">
+            <a href="index.html" class="nav-link text-sm text-slate-700 dark:text-slate-200 hover:text-brand-600">Accueil</a>
+            <a href="livres.html" class="nav-link text-sm text-slate-700 dark:text-slate-200 hover:text-brand-600">Livres</a>
+            <a href="bio.html" class="nav-link text-sm text-slate-700 dark:text-slate-200 hover:text-brand-600">À propos</a>
+            <a href="ateliers.html" class="nav-link text-sm text-slate-700 dark:text-slate-200 hover:text-brand-600">Ateliers</a>
+            <a href="contact.html" class="nav-link text-sm inline-flex items-center gap-2 px-3 py-1.5 rounded-md bg-brand-600 text-white hover:bg-brand-700 shadow-sm">Contact</a>
+          </nav>
+          <div class="flex items-center gap-2">
+            <button id="themeToggle" class="p-2 rounded-md hover:bg-slate-100 dark:hover:bg-slate-800" aria-label="Basculer le thème">
+              <svg class="h-5 w-5 sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2m0 16v2m10-10h-2M4 12H2m15.364 6.364-1.414-1.414M6.05 6.05 4.636 4.636m12.728 0-1.414 1.414M6.05 17.95 4.636 19.364"/></svg>
+              <svg class="h-5 w-5 moon-icon hidden" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+            </button>
+            <button id="menuToggle" class="md:hidden p-2 rounded-md hover:bg-slate-100 dark:hover:bg-slate-800" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="menuMobile">
+              <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div id="menuMobile" class="md:hidden hidden border-t border-slate-200 dark:border-slate-800" role="region">
+        <div class="px-4 py-3 space-y-2">
+          <a href="index.html" class="block nav-link py-2">Accueil</a>
+          <a href="livres.html" class="block nav-link py-2">Livres</a>
+          <a href="bio.html" class="block nav-link py-2">À propos</a>
+          <a href="ateliers.html" class="block nav-link py-2">Ateliers</a>
+          <a href="contact.html" class="block nav-link py-2">Contact</a>
+        </div>
+      </div>
+    </header>
+
+    <main id="contenu" class="py-12 sm:py-16">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <header class="max-w-3xl" data-fade="up">
+          <h1 class="font-display text-4xl font-extrabold tracking-tight text-slate-900 dark:text-white">Les livres</h1>
+          <p class="mt-3 text-slate-600 dark:text-slate-300">Albums, premières lectures et romans pour la jeunesse par <strong>Myriam Frolla</strong>. Filtrez par âge ou par type.</p>
+          <div class="mt-4 flex flex-wrap gap-2">
+            <a href="#" class="inline-flex items-center gap-2 text-sm px-3 py-2 rounded-md ring-1 ring-slate-300 dark:ring-slate-700 hover:bg-slate-50 dark:hover:bg-slate-800">Télécharger la bibliographie (PDF)</a>
+            <a href="https://www.amazon.fr/s?i=stripbooks&k=Myriam%20Frolla" target="_blank" rel="noopener" class="inline-flex items-center gap-2 text-sm px-3 py-2 rounded-md ring-1 ring-brand-300 hover:bg-brand-50 text-brand-700">Voir sur Amazon (Frolla)</a>
+            <a href="https://www.amazon.fr/s?i=stripbooks&k=Myriam%20Djait" target="_blank" rel="noopener" class="inline-flex items-center gap-2 text-sm px-3 py-2 rounded-md ring-1 ring-brand-300 hover:bg-brand-50 text-brand-700">Voir sur Amazon (Djait)</a>
+          </div>
+        </header>
+
+        <!-- Filtres -->
+        <section class="mt-8 ring-1 ring-slate-200 dark:ring-slate-800 rounded-xl p-4 bg-white dark:bg-slate-900" data-fade="up" data-fade-delay="80">
+          <div class="flex flex-col md:flex-row md:items-center justify-between gap-4">
+            <div class="flex-1">
+              <label for="bookSearch" class="sr-only">Rechercher</label>
+              <input id="bookSearch" type="search" placeholder="Rechercher un titre ou un mot-clé…" class="w-full px-4 py-3 rounded-md ring-1 ring-slate-300 dark:ring-slate-700 bg-white dark:bg-slate-900" />
+            </div>
+            <div class="flex flex-wrap gap-2">
+              <button class="px-3 py-1.5 text-sm rounded-full ring-1 ring-slate-300 dark:ring-slate-700 hover:bg-slate-50 dark:hover:bg-slate-800" data-filter-type="age" data-filter-value="4-6">4–6 ans</button>
+              <button class="px-3 py-1.5 text-sm rounded-full ring-1 ring-slate-300 dark:ring-slate-700 hover:bg-slate-50 dark:hover:bg-slate-800" data-filter-type="age" data-filter-value="7-9">7–9 ans</button>
+              <button class="px-3 py-1.5 text-sm rounded-full ring-1 ring-slate-300 dark:ring-slate-700 hover:bg-slate-50 dark:hover:bg-slate-800" data-filter-type="age" data-filter-value="10+">10+ ans</button>
+              <span class="w-px h-6 bg-slate-200 dark:bg-slate-700 mx-1"></span>
+              <button class="px-3 py-1.5 text-sm rounded-full ring-1 ring-slate-300 dark:ring-slate-700 hover:bg-slate-50 dark:hover:bg-slate-800" data-filter-type="type" data-filter-value="album">Album</button>
+              <button class="px-3 py-1.5 text-sm rounded-full ring-1 ring-slate-300 dark:ring-slate-700 hover:bg-slate-50 dark:hover:bg-slate-800" data-filter-type="type" data-filter-value="roman">Roman</button>
+              <button id="resetFilters" class="px-3 py-1.5 text-sm rounded-full bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700">Réinitialiser</button>
+            </div>
+          </div>
+        </section>
+
+        <!-- Grille de livres -->
+        <section class="mt-8" aria-live="polite">
+          <div id="bookGrid" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6" data-fade="up" data-fade-delay="120">
+            <!-- Remplissage statique basé sur données collectées -->
+            <article class="bg-white dark:bg-slate-900 ring-1 ring-slate-200 dark:ring-slate-800 rounded-xl overflow-hidden" data-book data-age="all" data-type="livre">
+              <a href="https://www.amazon.fr/dp/2487852208" target="_blank" rel="noopener" class="block aspect-[4/3] overflow-hidden bg-slate-100 dark:bg-slate-800">
+                <img src="https://books.google.com/books/content?id=LlczEQAAQBAJ&printsec=frontcover&img=1&zoom=3" alt="Couverture: Quand je serai grande, je serai artiste, comme ma maman" class="w-full h-full object-cover" loading="lazy" decoding="async" />
+              </a>
+              <div class="p-4">
+                <h3 class="font-semibold">Quand je serai grande, je serai artiste, comme ma maman</h3>
+                <p class="mt-1 text-sm text-slate-600 dark:text-slate-300">Album jeunesse. Voir la fiche détaillée.</p>
+                <div class="mt-3"><a href="https://www.amazon.fr/dp/2487852208" target="_blank" rel="noopener" class="text-brand-700 hover:text-brand-800 text-sm">Voir sur Amazon →</a></div>
+              </div>
+            </article>
+
+            <article class="bg-white dark:bg-slate-900 ring-1 ring-slate-200 dark:ring-slate-800 rounded-xl overflow-hidden" data-book data-age="all" data-type="livre">
+              <a href="https://www.amazon.fr/dp/2487852461" target="_blank" rel="noopener" class="block aspect-[4/3] overflow-hidden bg-slate-100 dark:bg-slate-800">
+                <img src="https://books.google.com/books/content?id=7Z1DEQAAQBAJ&printsec=frontcover&img=1&zoom=3" alt="Couverture: Qui sera le roi ?" class="w-full h-full object-cover" loading="lazy" decoding="async" />
+              </a>
+              <div class="p-4">
+                <h3 class="font-semibold">Qui sera le roi ?</h3>
+                <p class="mt-1 text-sm text-slate-600 dark:text-slate-300">Album jeunesse. Voir la fiche détaillée.</p>
+                <div class="mt-3"><a href="https://www.amazon.fr/dp/2487852461" target="_blank" rel="noopener" class="text-brand-700 hover:text-brand-800 text-sm">Voir sur Amazon →</a></div>
+              </div>
+            </article>
+
+            <article class="bg-white dark:bg-slate-900 ring-1 ring-slate-200 dark:ring-slate-800 rounded-xl overflow-hidden" data-book data-age="all" data-type="livre">
+              <a href="https://www.amazon.fr/dp/2387260139" target="_blank" rel="noopener" class="block aspect-[4/3] bg-gradient-to-br from-rose-200 to-amber-300 dark:from-slate-800 dark:to-slate-700"></a>
+              <div class="p-4">
+                <h3 class="font-semibold">Cléophée: Une coccinelle pas comme les autres</h3>
+                <p class="mt-1 text-sm text-slate-600 dark:text-slate-300">Album pour tout‑petits.</p>
+                <div class="mt-3"><a href="https://www.amazon.fr/dp/2387260139" target="_blank" rel="noopener" class="text-brand-700 hover:text-brand-800 text-sm">Voir sur Amazon →</a></div>
+              </div>
+            </article>
+
+            <article class="bg-white dark:bg-slate-900 ring-1 ring-slate-200 dark:ring-slate-800 rounded-xl overflow-hidden" data-book data-age="all" data-type="livre">
+              <a href="https://www.amazon.fr/dp/238587136X" target="_blank" rel="noopener" class="block aspect-[4/3] bg-gradient-to-br from-sky-200 to-indigo-300 dark:from-slate-800 dark:to-slate-700"></a>
+              <div class="p-4">
+                <h3 class="font-semibold">Un cadeau inattendu pour Hamza</h3>
+                <div class="mt-3"><a href="https://www.amazon.fr/dp/238587136X" target="_blank" rel="noopener" class="text-brand-700 hover:text-brand-800 text-sm">Voir sur Amazon →</a></div>
+              </div>
+            </article>
+
+            <article class="bg-white dark:bg-slate-900 ring-1 ring-slate-200 dark:ring-slate-800 rounded-xl overflow-hidden" data-book data-age="all" data-type="livre">
+              <a href="https://www.amazon.fr/dp/2385871270" target="_blank" rel="noopener" class="block aspect-[4/3] bg-gradient-to-br from-emerald-200 to-teal-300 dark:from-slate-800 dark:to-slate-700"></a>
+              <div class="p-4">
+                <h3 class="font-semibold">L’aphonie de Noémie</h3>
+                <div class="mt-3"><a href="https://www.amazon.fr/dp/2385871270" target="_blank" rel="noopener" class="text-brand-700 hover:text-brand-800 text-sm">Voir sur Amazon →</a></div>
+              </div>
+            </article>
+
+            <article class="bg-white dark:bg-slate-900 ring-1 ring-slate-200 dark:ring-slate-800 rounded-xl overflow-hidden" data-book data-age="all" data-type="livre">
+              <a href="https://www.amazon.fr/dp/2385870576" target="_blank" rel="noopener" class="block aspect-[4/3] bg-gradient-to-br from-violet-200 to-fuchsia-300 dark:from-slate-800 dark:to-slate-700"></a>
+              <div class="p-4">
+                <h3 class="font-semibold">Taurotus, roi des taureaux et ses mésaventures</h3>
+                <div class="mt-3"><a href="https://www.amazon.fr/dp/2385870576" target="_blank" rel="noopener" class="text-brand-700 hover:text-brand-800 text-sm">Voir sur Amazon →</a></div>
+              </div>
+            </article>
+
+            <article class="bg-white dark:bg-slate-900 ring-1 ring-slate-200 dark:ring-slate-800 rounded-xl overflow-hidden" data-book data-age="all" data-type="livre">
+              <a href="https://www.amazon.fr/dp/2385870924" target="_blank" rel="noopener" class="block aspect-[4/3] bg-gradient-to-br from-amber-200 to-orange-300 dark:from-slate-800 dark:to-slate-700"></a>
+              <div class="p-4">
+                <h3 class="font-semibold">Un ami de paille</h3>
+                <div class="mt-3"><a href="https://www.amazon.fr/dp/2385870924" target="_blank" rel="noopener" class="text-brand-700 hover:text-brand-800 text-sm">Voir sur Amazon →</a></div>
+              </div>
+            </article>
+
+            <article class="bg-white dark:bg-slate-900 ring-1 ring-slate-200 dark:ring-slate-800 rounded-xl overflow-hidden" data-book data-age="all" data-type="livre">
+              <a href="https://www.amazon.fr/dp/2385870657" target="_blank" rel="noopener" class="block aspect-[4/3] bg-gradient-to-br from-pink-200 to-rose-300 dark:from-slate-800 dark:to-slate-700"></a>
+              <div class="p-4">
+                <h3 class="font-semibold">Princesse Romy ne veut pas se laver !</h3>
+                <div class="mt-3"><a href="https://www.amazon.fr/dp/2385870657" target="_blank" rel="noopener" class="text-brand-700 hover:text-brand-800 text-sm">Voir sur Amazon →</a></div>
+              </div>
+            </article>
+
+            <article class="bg-white dark:bg-slate-900 ring-1 ring-slate-200 dark:ring-slate-800 rounded-xl overflow-hidden" data-book data-age="all" data-type="livre">
+              <a href="https://www.amazon.fr/dp/2385870274" target="_blank" rel="noopener" class="block aspect-[4/3] bg-gradient-to-br from-sky-200 to-cyan-300 dark:from-slate-800 dark:to-slate-700"></a>
+              <div class="p-4">
+                <h3 class="font-semibold">Une préparation de Pâques pas comme les autres</h3>
+                <div class="mt-3"><a href="https://www.amazon.fr/dp/2385870274" target="_blank" rel="noopener" class="text-brand-700 hover:text-brand-800 text-sm">Voir sur Amazon →</a></div>
+              </div>
+            </article>
+
+            <article class="bg-white dark:bg-slate-900 ring-1 ring-slate-200 dark:ring-slate-800 rounded-xl overflow-hidden" data-book data-age="all" data-type="livre">
+              <a href="https://www.amazon.fr/dp/2493997301" target="_blank" rel="noopener" class="block aspect-[4/3] bg-gradient-to-br from-emerald-200 to-teal-300 dark:from-slate-800 dark:to-slate-700"></a>
+                <img src="https://m.media-amazon.com/images/I/61SfBXvSwCL._SY466_.jpg" alt="Couverture: Qui sera le roi ?" class="w-full h-full object-cover" loading="lazy" decoding="async" />
+              <div class="p-4">
+                <h3 class="font-semibold">Les caprices de Benoît</h3>
+                <div class="mt-3"><a href="https://www.amazon.fr/dp/2493997301" target="_blank" rel="noopener" class="text-brand-700 hover:text-brand-800 text-sm">Voir sur Amazon →</a></div>
+              </div>
+            </article>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer class="py-12">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid md:grid-cols-3 gap-8 items-center">
+          <div>
+            <div class="font-display font-bold text-xl">Nom de l’autrice</div>
+            <p class="mt-2 text-sm text-slate-600 dark:text-slate-300">Autrice jeunesse — albums et romans.</p>
+          </div>
+          <nav class="text-sm flex flex-wrap gap-x-6 gap-y-2" aria-label="Navigation du pied de page">
+            <a href="livres.html" class="hover:text-brand-600">Livres</a>
+            <a href="bio.html" class="hover:text-brand-600">À propos</a>
+            <a href="ateliers.html" class="hover:text-brand-600">Ateliers</a>
+            <a href="contact.html" class="hover:text-brand-600">Contact</a>
+          </nav>
+          <div class="flex items-center gap-4 justify-start md:justify-end">
+            <a href="#" class="p-2 rounded hover:bg-slate-100 dark:hover:bg-slate-800" aria-label="Instagram" title="Instagram">
+              <svg viewBox="0 0 24 24" class="h-5 w-5" fill="currentColor" aria-hidden="true"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5Zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7Zm5 3a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm6.5-.75a1.25 1.25 0 1 1 0 2.5 1.25 1.25 0 0 1 0-2.5ZM12 9a3 3 0 1 0 .001 6.001A3 3 0 0 0 12 9Z"/></svg>
+            </a>
+            <a href="https://www.facebook.com/myriam.djait.3" target="_blank" rel="noopener" class="p-2 rounded hover:bg-slate-100 dark:hover:bg-slate-800" aria-label="Facebook" title="Facebook">
+              <svg viewBox="0 0 24 24" class="h-5 w-5" fill="currentColor" aria-hidden="true"><path d="M13.5 22v-8h2.5l.5-3h-3V8.5c0-.9.3-1.5 1.5-1.5H17V4.2C16.7 4.1 15.8 4 14.8 4 12.6 4 11 5.4 11 8v3H8.5v3H11v8h2.5Z"/></svg>
+            </a>
+            <a href="#" class="p-2 rounded hover:bg-slate-100 dark:hover:bg-slate-800" aria-label="YouTube" title="YouTube">
+              <svg viewBox="0 0 24 24" class="h-5 w-5" fill="currentColor" aria-hidden="true"><path d="M23 12s0-3.3-.4-4.8c-.2-.9-1-1.7-2-1.9C18.9 5 12 5 12 5s-6.9 0-8.6.3c-1 .2-1.8 1-2 1.9C1 8.7 1 12 1 12s0 3.3.4 4.8c.2.9 1 1.7 2 1.9C5.1 19 12 19 12 19s6.9 0 8.6-.3c1-.2 1.8-1 2-1.9.4-1.5.4-4.8.4-4.8ZM10 15.5v-7l6 3.5-6 3.5Z"/></svg>
+            </a>
+          </div>
+        </div>
+        <div class="mt-10 text-xs text-slate-500 text-center">© <span id="year"></span> Nom de l’autrice. Tous droits réservés.</div>
+      </div>
+    </footer>
+
+    <button id="backToTop" class="fixed bottom-6 right-6 hidden p-3 rounded-full bg-brand-600 text-white shadow-lg hover:bg-brand-700" aria-label="Retour en haut">↑</button>
+    <script src="assets/js/main.js"></script>
+  </body>
+  </html>

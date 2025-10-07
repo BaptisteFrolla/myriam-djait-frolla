@@ -1,0 +1,22 @@
+# OS / fichiers temporaires
+.DS_Store
+Thumbs.db
+
+# IDE / éditeur
+.vscode/
+.idea/
+
+# Node / builds éventuels
+node_modules/
+dist/
+.cache/
+.parcel-cache/
+.next/
+out/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+

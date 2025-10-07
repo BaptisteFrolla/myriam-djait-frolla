@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Myriam Frolla — Autrice jeunesse</title>
+    <meta name="description" content="Site officiel de Myriam Frolla — autrice jeunesse : livres, ateliers, rencontres et actualités." />
+    <meta name="theme-color" content="#f472b6" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Myriam Frolla — Autrice jeunesse" />
+    <meta property="og:description" content="Site officiel de Myriam Frolla. Histoires pour grandir, rêver et s'émerveiller." />
+    <meta property="og:image" content="assets/social/og-image.jpg" />
+    <link rel="icon" href="assets/favicon.ico" />
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+
+    <!-- Tailwind via CDN for quick start -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            fontFamily: {
+              display: ['Quicksand', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+              body: ['Inter', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+            },
+            colors: {
+              brand: {
+                50: '#fff1f8',
+                100: '#ffe4f1',
+                200: '#fec7e3',
+                300: '#fda3d2',
+                400: '#fb77bc',
+                500: '#f472b6',
+                600: '#e14598',
+                700: '#be267b',
+                800: '#9b1e65',
+                900: '#7e1a54',
+              },
+              accent: {
+                500: '#f59e0b',
+                600: '#d97706',
+              },
+            },
+          },
+        },
+      }
+    </script>
+
+    <style>
+      /* Decorative blob background for hero */
+      .blob {
+        background: radial-gradient(60% 60% at 20% 20%, #fda3d244 0%, #ffffff00 100%),
+                    radial-gradient(50% 50% at 80% 30%, #f59e0b33 0%, #ffffff00 100%),
+                    radial-gradient(40% 40% at 50% 80%, #60a5fa33 0%, #ffffff00 100%);
+      }
+    </style>
+  </head>
+  <body class="font-body text-slate-800 dark:text-slate-100 bg-white dark:bg-slate-900">
+    <!-- Skip link -->
+    <a href="#contenu" class="sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 bg-brand-600 text-white px-4 py-2 rounded">Aller au contenu</a>
+
+    <!-- Header / Nav -->
+    <header class="sticky top-0 z-50 bg-white/80 dark:bg-slate-900/80 backdrop-blur border-b border-slate-200/70 dark:border-slate-800">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between h-16">
+          <a href="index.html" class="flex items-center gap-3 group" aria-label="Retour à l’accueil">
+            <span class="inline-flex h-9 w-9 rounded-full bg-brand-500/15 text-brand-700 dark:text-brand-200 items-center justify-center ring-1 ring-brand-500/20 group-hover:ring-brand-500/40 transition">
+              <!-- Simple feather logo -->
+              <svg viewBox="0 0 24 24" class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M20 6c-5.333 0-9.333 1.333-12 4S4 18 4 18s6-1.333 8-4 4-8 8-8Z" />
+                <path d="M14 10c-1.5 1.5-4 2-6 2" />
+              </svg>
+            </span>
+            <div class="leading-tight">
+              <div class="font-display font-bold text-slate-900 dark:text-white tracking-tight">Myriam Frolla</div>
+              <div class="text-xs text-slate-500 dark:text-slate-400">Autrice jeunesse</div>
+            </div>
+          </a>
+
+          <nav class="hidden md:flex items-center gap-6" aria-label="Navigation principale">
+            <a href="index.html" class="nav-link text-sm text-slate-700 dark:text-slate-200 hover:text-brand-600">Accueil</a>
+            <a href="livres.html" class="nav-link text-sm text-slate-700 dark:text-slate-200 hover:text-brand-600">Livres</a>
+            <a href="bio.html" class="nav-link text-sm text-slate-700 dark:text-slate-200 hover:text-brand-600">À propos</a>
+            <a href="ateliers.html" class="nav-link text-sm text-slate-700 dark:text-slate-200 hover:text-brand-600">Ateliers</a>
+            <a href="contact.html" class="nav-link text-sm inline-flex items-center gap-2 px-3 py-1.5 rounded-md bg-brand-600 text-white hover:bg-brand-700 shadow-sm">Contact</a>
+          </nav>
+
+          <div class="flex items-center gap-2">
+            <button id="themeToggle" class="p-2 rounded-md hover:bg-slate-100 dark:hover:bg-slate-800" aria-label="Basculer le thème">
+              <svg class="h-5 w-5 sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="4"></circle>
+                <path d="M12 2v2m0 16v2m10-10h-2M4 12H2m15.364 6.364-1.414-1.414M6.05 6.05 4.636 4.636m12.728 0-1.414 1.414M6.05 17.95 4.636 19.364"/>
+              </svg>
+              <svg class="h-5 w-5 moon-icon hidden" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+              </svg>
+            </button>
+            <button id="menuToggle" class="md:hidden p-2 rounded-md hover:bg-slate-100 dark:hover:bg-slate-800" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="menuMobile">
+              <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="3" y1="12" x2="21" y2="12"></line>
+                <line x1="3" y1="6" x2="21" y2="6"></line>
+                <line x1="3" y1="18" x2="21" y2="18"></line>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div id="menuMobile" class="md:hidden hidden border-t border-slate-200 dark:border-slate-800" role="region">
+        <div class="px-4 py-3 space-y-2">
+          <a href="index.html" class="block nav-link py-2">Accueil</a>
+          <a href="livres.html" class="block nav-link py-2">Livres</a>
+          <a href="bio.html" class="block nav-link py-2">À propos</a>
+          <a href="ateliers.html" class="block nav-link py-2">Ateliers</a>
+          <a href="contact.html" class="block nav-link py-2">Contact</a>
+        </div>
+      </div>
+    </header>
+
+    <main id="contenu">
+      <!-- Hero -->
+      <section class="relative overflow-hidden">
+        <div class="absolute inset-0 blob pointer-events-none"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 sm:py-28">
+          <div class="grid lg:grid-cols-2 gap-10 items-center">
+            <div data-fade="up">
+              <span class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-sm bg-brand-500/10 text-brand-700 dark:text-brand-200 ring-1 ring-brand-500/20">Autrice jeunesse</span>
+              <h1 class="mt-5 font-display text-4xl sm:text-5xl font-extrabold tracking-tight text-slate-900 dark:text-white">
+                Des histoires qui font grandir, rêver et s’émerveiller
+              </h1>
+              <p class="mt-5 text-lg text-slate-600 dark:text-slate-300 max-w-prose">
+                Bienvenue sur le site officiel de <strong>Myriam Frolla</strong>. Découvrez ses albums et romans pour la jeunesse, ses ateliers d’écriture et ses rencontres en écoles et médiathèques.
+              </p>
+              <div class="mt-8 flex flex-wrap gap-3">
+                <a href="livres.html" class="inline-flex items-center gap-2 px-5 py-3 rounded-md bg-brand-600 text-white hover:bg-brand-700 shadow-sm">
+                  Découvrir les livres
+                  <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+                <a href="#ateliers" class="inline-flex items-center gap-2 px-5 py-3 rounded-md bg-slate-100 dark:bg-slate-800 text-slate-900 dark:text-slate-100 hover:bg-slate-200 dark:hover:bg-slate-700">
+                  Ateliers et rencontres
+                </a>
+              </div>
+              <div class="mt-8 flex items-center gap-6 text-sm text-slate-500 dark:text-slate-400">
+                <div class="flex items-center gap-2"><span class="h-2 w-2 rounded-full bg-green-500"></span> Prochains créneaux ateliers ouverts</div>
+                <div>Actualité: nouvelle parution au printemps</div>
+              </div>
+            </div>
+            <div class="relative" data-fade="up" data-fade-delay="120">
+              <div class="aspect-[4/3] rounded-2xl bg-gradient-to-br from-brand-200 via-rose-100 to-amber-100 dark:from-brand-900/40 dark:via-slate-800 dark:to-amber-900/20 ring-1 ring-black/5 dark:ring-white/5 shadow-xl flex items-center justify-center overflow-hidden">
+                <div class="text-center p-8">
+                  <div class="mx-auto h-24 w-24 rounded-full bg-white/70 dark:bg-slate-900/50 backdrop-blur ring-1 ring-black/5 dark:ring-white/10 flex items-center justify-center">
+                    <svg viewBox="0 0 24 24" class="h-12 w-12 text-brand-700 dark:text-brand-300" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <path d="M4 19.5c4-2 8-2 12 0 1-2.5 2.5-5.5 4-7-4 0-7-2-9-5-2 3-5 5-9 5 1.5 1.5 3 4.5 4 7Z" />
+                    </svg>
+                  </div>
+                  <h3 class="mt-6 font-display text-2xl font-bold">Lectures, ateliers, rencontres</h3>
+                  <p class="mt-2 text-slate-600 dark:text-slate-300">Pour les classes, médiathèques et événements jeunesse</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Nouveautés / slider simple -->
+      <section class="py-16 sm:py-20 bg-slate-50 dark:bg-slate-950/40 border-y border-slate-200/70 dark:border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="flex items-end justify-between gap-4" data-fade="up">
+            <div>
+              <h2 class="font-display text-3xl font-bold text-slate-900 dark:text-white">Dernières nouveautés</h2>
+              <p class="mt-2 text-slate-600 dark:text-slate-300">Trois ouvrages récents à mettre entre toutes les mains.</p>
+            </div>
+            <div class="hidden sm:flex gap-2">
+              <button class="slider-prev p-2 rounded-md ring-1 ring-slate-200 dark:ring-slate-700 hover:bg-white dark:hover:bg-slate-800" aria-label="Précédent">◀</button>
+              <button class="slider-next p-2 rounded-md ring-1 ring-slate-200 dark:ring-slate-700 hover:bg-white dark:hover:bg-slate-800" aria-label="Suivant">▶</button>
+            </div>
+          </div>
+          <div class="mt-8 relative">
+            <div class="slider overflow-x-auto snap-x snap-mandatory flex gap-6 pb-4" aria-label="Nouveautés" data-fade="up" data-fade-delay="120">
+              <!-- Nouveautés réelles -->
+              <article class="min-w-[280px] max-w-[320px] snap-start bg-white dark:bg-slate-900 ring-1 ring-slate-200 dark:ring-slate-800 rounded-xl overflow-hidden shadow-sm">
+                <a href="https://www.amazon.fr/dp/2487852208" target="_blank" rel="noopener" class="block aspect-[4/3] overflow-hidden bg-slate-100 dark:bg-slate-800">
+                  <img src="https://books.google.com/books/content?id=LlczEQAAQBAJ&printsec=frontcover&img=1&zoom=3" alt="Couverture: Quand je serai grande, je serai artiste, comme ma maman" class="w-full h-full object-cover" loading="lazy" decoding="async" />
+                </a>
+                <div class="p-4">
+                  <h3 class="font-semibold">Quand je serai grande, je serai artiste, comme ma maman</h3>
+                </div>
+              </article>
+              <article class="min-w-[280px] max-w-[320px] snap-start bg-white dark:bg-slate-900 ring-1 ring-slate-200 dark:ring-slate-800 rounded-xl overflow-hidden shadow-sm">
+                <a href="https://www.amazon.fr/dp/2487852461" target="_blank" rel="noopener" class="block aspect-[4/3] overflow-hidden bg-slate-100 dark:bg-slate-800">
+                  <img src="https://books.google.com/books/content?id=7Z1DEQAAQBAJ&printsec=frontcover&img=1&zoom=3" alt="Couverture: Qui sera le roi ?" class="w-full h-full object-cover" loading="lazy" decoding="async" />
+                </a>
+                <div class="p-4">
+                  <h3 class="font-semibold">Qui sera le roi ?</h3>
+                </div>
+              </article>
+              <article class="min-w-[280px] max-w-[320px] snap-start bg-white dark:bg-slate-900 ring-1 ring-slate-200 dark:ring-slate-800 rounded-xl overflow-hidden shadow-sm">
+                <a href="https://www.amazon.fr/dp/2387260139" target="_blank" rel="noopener" class="block aspect-[4/3] bg-gradient-to-br from-rose-200 to-amber-300 dark:from-slate-800 dark:to-slate-700"></a>
+                <div class="p-4">
+                  <h3 class="font-semibold">Cléophée: Une coccinelle pas comme les autres</h3>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Ateliers teaser -->
+      <section id="ateliers" class="py-16 sm:py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-2 gap-10 items-center">
+          <div data-fade="up">
+            <h2 class="font-display text-3xl font-bold text-slate-900 dark:text-white">Ateliers et rencontres</h2>
+            <p class="mt-3 text-slate-600 dark:text-slate-300">Interventions en écoles, collèges et médiathèques : lectures, ateliers d’écriture, clubs livres, projets sur mesure.</p>
+            <ul class="mt-4 space-y-2 text-slate-700 dark:text-slate-200">
+              <li class="flex items-start gap-3"><span class="mt-1 h-2 w-2 rounded-full bg-brand-600"></span> Formats 1h à journée complète</li>
+              <li class="flex items-start gap-3"><span class="mt-1 h-2 w-2 rounded-full bg-brand-600"></span> Thématiques : nature, amitié, émotions, imaginaire</li>
+              <li class="flex items-start gap-3"><span class="mt-1 h-2 w-2 rounded-full bg-brand-600"></span> Adapté par niveau et objectifs pédagogiques</li>
+            </ul>
+            <div class="mt-6 flex gap-3">
+              <a href="ateliers.html" class="inline-flex items-center gap-2 px-5 py-3 rounded-md bg-brand-600 text-white hover:bg-brand-700 shadow-sm">Voir les formats</a>
+              <a href="contact.html" class="inline-flex items-center gap-2 px-5 py-3 rounded-md bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700">Demander un devis</a>
+            </div>
+          </div>
+          <div class="aspect-[4/3] rounded-2xl bg-white dark:bg-slate-900 ring-1 ring-slate-200 dark:ring-slate-800 shadow-sm flex items-center justify-center" data-fade="up" data-fade-delay="120">
+            <div class="grid grid-cols-3 gap-4 p-6 w-full">
+              <div class="h-24 rounded-xl bg-rose-200/70 dark:bg-rose-900/30"></div>
+              <div class="h-24 rounded-xl bg-amber-200/70 dark:bg-amber-900/30"></div>
+              <div class="h-24 rounded-xl bg-sky-200/70 dark:bg-sky-900/30"></div>
+              <div class="h-24 rounded-xl bg-emerald-200/70 dark:bg-emerald-900/30"></div>
+              <div class="h-24 rounded-xl bg-violet-200/70 dark:bg-violet-900/30"></div>
+              <div class="h-24 rounded-xl bg-pink-200/70 dark:bg-pink-900/30"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Newsletter -->
+      <section class="py-16 sm:py-20 bg-gradient-to-br from-rose-50 to-amber-50 dark:from-slate-900 dark:to-slate-900 border-y border-slate-200/70 dark:border-slate-800">
+        <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center" data-fade="up">
+          <h2 class="font-display text-3xl font-bold text-slate-900 dark:text-white">Restez informé·e</h2>
+          <p class="mt-2 text-slate-600 dark:text-slate-300">Recevez les sorties, dates d’ateliers et coulisses de création.</p>
+          <form id="newsletterForm" class="mt-6 flex flex-col sm:flex-row gap-3 justify-center">
+            <label class="sr-only" for="newsletterEmail">Adresse e‑mail</label>
+            <input id="newsletterEmail" type="email" required placeholder="Votre e‑mail" class="w-full sm:w-80 px-4 py-3 rounded-md ring-1 ring-slate-300 dark:ring-slate-700 bg-white dark:bg-slate-900" />
+            <button class="px-5 py-3 rounded-md bg-brand-600 text-white hover:bg-brand-700">S’inscrire</button>
+          </form>
+          <p id="newsletterMsg" class="mt-2 text-sm text-slate-500"></p>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="py-12">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid md:grid-cols-3 gap-8 items-center">
+          <div>
+            <div class="font-display font-bold text-xl">Myriam Frolla</div>
+            <p class="mt-2 text-sm text-slate-600 dark:text-slate-300">Autrice jeunesse — albums et romans.</p>
+          </div>
+          <nav class="text-sm flex flex-wrap gap-x-6 gap-y-2" aria-label="Navigation du pied de page">
+            <a href="livres.html" class="hover:text-brand-600">Livres</a>
+            <a href="bio.html" class="hover:text-brand-600">À propos</a>
+            <a href="ateliers.html" class="hover:text-brand-600">Ateliers</a>
+            <a href="contact.html" class="hover:text-brand-600">Contact</a>
+          </nav>
+          <div class="flex items-center gap-4 justify-start md:justify-end">
+            <a href="#" class="p-2 rounded hover:bg-slate-100 dark:hover:bg-slate-800" aria-label="Instagram" title="Instagram">
+              <svg viewBox="0 0 24 24" class="h-5 w-5" fill="currentColor" aria-hidden="true"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5Zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7Zm5 3a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm6.5-.75a1.25 1.25 0 1 1 0 2.5 1.25 1.25 0 0 1 0-2.5ZM12 9a3 3 0 1 0 .001 6.001A3 3 0 0 0 12 9Z"/></svg>
+            </a>
+            <a href="https://www.facebook.com/myriam.djait.3" target="_blank" rel="noopener" class="p-2 rounded hover:bg-slate-100 dark:hover:bg-slate-800" aria-label="Facebook" title="Facebook">
+              <svg viewBox="0 0 24 24" class="h-5 w-5" fill="currentColor" aria-hidden="true"><path d="M13.5 22v-8h2.5l.5-3h-3V8.5c0-.9.3-1.5 1.5-1.5H17V4.2C16.7 4.1 15.8 4 14.8 4 12.6 4 11 5.4 11 8v3H8.5v3H11v8h2.5Z"/></svg>
+            </a>
+            <a href="#" class="p-2 rounded hover:bg-slate-100 dark:hover:bg-slate-800" aria-label="YouTube" title="YouTube">
+              <svg viewBox="0 0 24 24" class="h-5 w-5" fill="currentColor" aria-hidden="true"><path d="M23 12s0-3.3-.4-4.8c-.2-.9-1-1.7-2-1.9C18.9 5 12 5 12 5s-6.9 0-8.6.3c-1 .2-1.8 1-2 1.9C1 8.7 1 12 1 12s0 3.3.4 4.8c.2.9 1 1.7 2 1.9C5.1 19 12 19 12 19s6.9 0 8.6-.3c1-.2 1.8-1 2-1.9.4-1.5.4-4.8.4-4.8ZM10 15.5v-7l6 3.5-6 3.5Z"/></svg>
+            </a>
+          </div>
+        </div>
+        <div class="mt-10 text-xs text-slate-500 text-center">© <span id="year"></span> Nom de l’autrice. Tous droits réservés.</div>
+      </div>
+    </footer>
+
+    <!-- Back to top -->
+    <button id="backToTop" class="fixed bottom-6 right-6 hidden p-3 rounded-full bg-brand-600 text-white shadow-lg hover:bg-brand-700" aria-label="Retour en haut">↑</button>
+
+    <script src="assets/js/main.js"></script>
+  </body>
+  </html>
