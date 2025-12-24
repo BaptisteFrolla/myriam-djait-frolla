@@ -4,19 +4,22 @@
     <meta charset="utf-8" />
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Myriam Frolla - Livres (Page 2)</title>
-    <meta name="description" content="Suite de la bibliographie de Myriam Frolla : albums et romans jeunesse." />
+    <title>Myriam Frolla - Livres</title>
+    <meta name="description" content="Suite de la bibliographie de Myriam Frolla : albums et romans jeunesse, par Âge et par thèmes." />
     <meta name="theme-color" content="#f472b6" />
     <link rel="icon" href="assets/favicon.ico" />
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
     <script src="https://cdn.tailwindcss.com"></script>
-    <script>tailwind.config = { darkMode:'class' }</script>
+    <script>
+      tailwind.config = { darkMode:'class', theme:{ extend:{ fontFamily:{ display:['Quicksand','ui-sans-serif','system-ui','sans-serif'], body:['Inter','ui-sans-serif','system-ui','sans-serif'] }, colors:{ brand:{50:'#fff1f8',100:'#ffe4f1',200:'#fec7e3',300:'#fda3d2',400:'#fb77bc',500:'#f472b6',600:'#e14598',700:'#be267b',800:'#9b1e65',900:'#7e1a54'} } } } }
+    </script>
   </head>
-  <body class="font-body text-slate-800 dark:text-slate-100 bg-white dark:bg-slate-900">
+    <body class="font-body text-slate-800 dark:text-slate-100 bg-white dark:bg-slate-900">
+    <a href="#contenu" class="sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 bg-brand-600 text-white px-4 py-2 rounded">Aller au contenu</a>
     <header class="sticky top-0 z-50 bg-white/80 dark:bg-slate-900/80 backdrop-blur border-b border-slate-200/70 dark:border-slate-800">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex items-center justify-between h-16">
-          <a href="index.html" class="flex items-center gap-3 group" aria-label="Retour à l’accueil">
+          <a href="index.html" class="flex items-center gap-3 group" aria-label="Retour Ã  l'accueil">
             <span class="inline-flex h-9 w-9 rounded-full bg-brand-500/15 text-brand-700 dark:text-brand-200 items-center justify-center ring-1 ring-brand-500/20 group-hover:ring-brand-500/40 transition">
               <svg viewBox="0 0 24 24" class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6c-5.333 0-9.333 1.333-12 4S4 18 4 18s6-1.333 8-4 4-8 8-8Z"/><path d="M14 10c-1.5 1.5-4 2-6 2"/></svg>
             </span>
@@ -26,12 +29,28 @@
             </div>
           </a>
           <nav class="hidden md:flex items-center gap-6" aria-label="Navigation principale">
-            <a href="index.html" class="nav-link text-sm">Accueil</a>
-            <a href="livres.html" class="nav-link text-sm">Livres</a>
-            <a href="bio.html" class="nav-link text-sm">À propos</a>
-            <a href="ateliers.html" class="nav-link text-sm">Salons</a>
-            <a href="contact.html" class="nav-link text-sm">Contact</a>
+            <a href="index.html" class="nav-link text-sm text-slate-700 dark:text-slate-200 hover:text-brand-600">Accueil</a>
+            <a href="livres.html" class="nav-link text-sm text-slate-700 dark:text-slate-200 hover:text-brand-600">Livres</a>
+            <a href="bio.html" class="nav-link text-sm text-slate-700 dark:text-slate-200 hover:text-brand-600"> propos</a>
+            <a href="contact.html" class="nav-link text-sm inline-flex items-center gap-2 px-3 py-1.5 rounded-md bg-brand-600 text-white hover:bg-brand-700 shadow-sm">Contact</a>
           </nav>
+          <div class="flex items-center gap-2">
+            <button id="themeToggle" class="p-2 rounded-md hover:bg-slate-100 dark:hover:bg-slate-800" aria-label="Basculer le thÃ¨me">
+              <svg class="h-5 w-5 sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2m10-10h-2M4 12H2m15.364 6.364-1.414-1.414M6.05 6.05 4.636 4.636m12.728 0-1.414 1.414M6.05 17.95 4.636 19.364"/></svg>
+              <svg class="h-5 w-5 moon-icon hidden" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+            </button>
+            <button id="menuToggle" class="md:hidden p-2 rounded-md hover:bg-slate-100 dark:hover:bg-slate-800" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="menuMobile">
+              <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div id="menuMobile" class="md:hidden hidden border-t border-slate-200 dark:border-slate-800" role="region">
+        <div class="px-4 py-3 space-y-2">
+          <a href="index.html" class="block nav-link py-2">Accueil</a>
+          <a href="livres.html" class="block nav-link py-2">Livres</a>
+          <a href="bio.html" class="block nav-link py-2"> propos</a>
+          <a href="contact.html" class="block nav-link py-2">Contact</a>
         </div>
       </div>
     </header>
